@@ -15,10 +15,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class Settings:
-    MODEL_PATH = r"notebooks\dl\models\best_model.pth"
-    SCALER_PATH = r"notebooks\dl\models\exoplanet_scaler.pkl"
-    LABEL_ENCODER_PATH = r"notebooks\dl\models\exoplanet_label_encoder.pkl"
-    MODEL_INFO_PATH = r"notebooks\dl\models\model_info.pkl"
+    MODEL_PATH = r"models\best_model.pth"
+    SCALER_PATH = r"models\exoplanet_scaler.pkl"
+    LABEL_ENCODER_PATH = r"models\exoplanet_label_encoder.pkl"
+    MODEL_INFO_PATH = r"models\model_info.pkl"
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 settings = Settings()
